@@ -13,6 +13,7 @@ export default function Item(props) {
         valign={props.valign}
         bgcolor={props.bgcolor}
         style={props.style}
+        width={props.width}
       >
         {props.children}
       </td>
@@ -27,6 +28,7 @@ Item.propTypes = {
   valign: PropTypes.oneOf(['top', 'middle', 'bottom']),
   style: EmailPropTypes.style,
   children: PropTypes.node,
+  width: PropTypes.string,
 }
 
 Item.defaultProps = {
@@ -36,4 +38,5 @@ Item.defaultProps = {
   valign: undefined,
   style: undefined,
   children: undefined,
+  width: undefined,
 }
